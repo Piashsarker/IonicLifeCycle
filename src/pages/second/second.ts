@@ -1,15 +1,21 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import {SecondPage} from "../second/second";
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+/**
+ * Generated class for the SecondPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+
+@IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-second',
+  templateUrl: 'second.html',
 })
-export class HomePage {
+export class SecondPage {
 
-  constructor(public navCtrl: NavController) {
-
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
 
@@ -18,19 +24,19 @@ export class HomePage {
    * the view can be accessed or not (returning true or false).
    */
   ionViewCanEnter(){
-    console.log("ionViewCanEnter HomePage.");
+    console.log("ionViewCanEnter SecondPage.");
   }
   /** TODO: ionViewCanLeave() Nav Guards
-   ionViewCanLeave(){
+  ionViewCanLeave(){
     console.log('ionViewCanLeave SecondPage.');
   }
 
-   /** TODO: ionViewDidLoad():
+  /** TODO: ionViewDidLoad():
    *   Fired only when a view is stored in memory.
    *  This event is NOT fired on entering a view that is already cached.
    *  It’s a nice place for init related tasks. **/
   ionViewDidLoad(){
-    console.log("ionViewDidLoad HomePage.");
+    console.log("ionViewDidLoad SecondPage.");
   }
 
   /** TODO: ionViewWillEnter():
@@ -39,13 +45,13 @@ export class HomePage {
    *  time you enter in the view (setting event listeners, updating a table, etc.).
    *  **/
   ionViewWillEnter(){
-    console.log('ionViewWillEnter HomePage.');
+    console.log('ionViewWillEnter SecondPage.');
   }
   /** TODO: ionViewDidEnter()
    *  Fired when entering a page, after it becomes the active page.
    *  Quite similar to the previous one. **/
   ionViewDidEnter(){
-    console.log('ionViewDidEnter HomePage.');
+    console.log('ionViewDidEnter SecondPage.');
   }
 
   /** TODO: ionViewWillLeave()
@@ -54,7 +60,7 @@ export class HomePage {
    *  page (deactivate event listeners, etc.).
    *  **/
   ionViewWillLeave(){
-    console.log('ionViewWillLeave HomePage.');
+    console.log('ionViewWillLeave SecondPage.');
   }
 
   /** TODO: ionViewDidLeave()
@@ -62,7 +68,7 @@ export class HomePage {
    * Similar to the previous one.
    */
   ionViewDidLeave(){
-    console.log('ionViewDidLeave HomePage.');
+    console.log('ionViewDidLeave SecondPage.');
   }
 
   /** TODO: ionViewWillUnload():
@@ -70,12 +76,10 @@ export class HomePage {
    */
 
   ionViewWillUnload(){
-    console.log('ionViewWillUnload HomePage.');
+    console.log('ionViewWillUnload SecondPage.');
   }
 
 
 
-  btnSecondClick() {
-    this.navCtrl.push(SecondPage);
-  }
+
 }
