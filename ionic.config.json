@@ -1,0 +1,8 @@
+{
+  "name": "ionic_life_cycle",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
